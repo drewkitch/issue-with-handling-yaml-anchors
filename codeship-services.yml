@@ -1,0 +1,10 @@
+app_base: &app_base
+  build:
+    dockerfile: Dockerfile
+    image: will-be-overridden
+
+app:
+  <<: *app_base
+  build:
+    dockerfile: Dockerfile
+    image: app

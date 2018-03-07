@@ -1,0 +1,3 @@
+- name: services validation error resolved?
+  command: true
+  service: app
